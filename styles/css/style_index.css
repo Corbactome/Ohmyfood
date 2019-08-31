@@ -2,6 +2,9 @@ body {
   margin: 0;
   font-family: "Times New Roman", arial, serif; }
 
+.index {
+  text-decoration: none; }
+
 header {
   border: solid 1px #43a047;
   background-color: #43a047; }
@@ -33,7 +36,8 @@ header h1 {
   border: solid 2px black;
   display: flex;
   justify-content: space-around;
-  margin-top: 50px; }
+  margin-top: 50px;
+  margin-bottom: 25px; }
 
 .third_menu {
   border: solid 2px black; }
@@ -46,15 +50,24 @@ header h1 {
     -webkit-animation: tremblements4 0.5s linear infinite; }
 
 .shortly {
-  boder: solid 2px black; }
+  border: solid 2px black;
+  width: 30%;
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #43a047;
+  border: solid 1px #43a047;
+  border-radius: 13px; }
 
 .shortly p {
   border: solid 2px black;
+  color: #fdd835;
+  font-weight: bold;
+  font-size: 35px;
   margin: 0 auto;
-  width: 15%;
-  overflow: hidden; }
-  .shortly p:hover {
-    -webkit-animation: ecriture 3s steps(15); }
+  width: 61%;
+  overflow: hidden;
+  -webkit-animation: ecriture 3s steps(13); }
 
 footer {
   border: solid 2px black;
@@ -65,7 +78,8 @@ footer {
   font-size: 30px;
   font-weight: bold;
   padding-top: 20px;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  margin-top: 25px; }
 
 .notice {
   border: solid 2px black;
@@ -112,8 +126,10 @@ footer {
   100% {
     transform: translateY(-8px); } }
 @-webkit-keyframes ecriture {
-  0% {
-    width: 0; } }
+  from {
+    width: 0%; }
+  to {
+    width: 61%; } }
 @font-face {
   font-family: 'amblebold';
   src: url("../../fonts/Amble-Bold-webfont.eot");
