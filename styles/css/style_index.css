@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: "Times New Roman", arial, serif; }
 
-.index {
+a {
   text-decoration: none; }
 
 header {
@@ -21,8 +21,10 @@ header h1 {
   justify-content: space-around;
   margin-top: 50px; }
 
-.first_menu:hover {
-  -webkit-animation: tremblements1 0.5s linear infinite; }
+.first_menu {
+  box-shadow: 1px 1px 12px #d5d7eb; }
+  .first_menu:hover {
+    -webkit-animation: tremblements1 0.5s linear infinite; }
 
 .second_menu:hover {
   -webkit-animation: tremblements2 0.5s linear infinite; }
@@ -61,7 +63,6 @@ footer {
   background-color: #43a047;
   display: flex;
   justify-content: space-between;
-  color: #fdd835;
   font-size: 30px;
   font-weight: bold;
   padding-top: 20px;
@@ -70,13 +71,15 @@ footer {
 
 .notice {
   margin-left: 15px;
-  padding: -20px; }
+  padding: -20px;
+  color: #fdd835; }
   .notice p {
     margin: 0; }
 
 .contact {
   margin-right: 15px;
-  height: auto; }
+  height: auto;
+  color: #fdd835; }
   .contact p {
     margin: 0; }
 

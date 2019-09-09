@@ -3,7 +3,7 @@ body {
     font-family: "Times New Roman", arial, serif;
 }
 
-.index {
+a {
     text-decoration: none;
 }
 
@@ -27,6 +27,7 @@ header h1 {
 }
 
 .first_menu {
+    box-shadow: 1px 1px 12px rgba(213, 215, 235, 1);
 
         &:hover { -webkit-animation: tremblements1 0.5s linear infinite; }
 }
@@ -76,7 +77,6 @@ footer {
     background-color: rgba(67,160,71 ,1);
     display: flex;
     justify-content: space-between;
-    color: rgba(253,216,53 ,1);
     font-size: 30px;
     font-weight: bold;
     padding-top: 20px;
@@ -87,6 +87,7 @@ footer {
 .notice {
     margin-left: 15px;
     padding: -20px;
+    color: rgba(253,216,53 ,1);
 
     & p {
         
@@ -97,6 +98,7 @@ footer {
 .contact {
     margin-right: 15px;
     height: auto;
+    color: rgba(253,216,53 ,1);
 
     & p {
         
