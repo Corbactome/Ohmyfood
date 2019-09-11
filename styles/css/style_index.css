@@ -58,7 +58,8 @@ header h1 {
   margin: 0 auto;
   width: 65%;
   overflow: hidden;
-  -webkit-animation: ecriture 3s infinite steps(13); }
+  -webkit-animation: ecriture 3s infinite steps(13);
+  animation: ecriture 3s infinite steps(13); }
 
 footer {
   background-color: #43a047;
@@ -84,7 +85,7 @@ footer {
   .contact p {
     margin: 0; }
 
-@media screen and (max-width: 800px) and (orientation: portrait) {
+@media screen and (max-width: 767px) and (orientation: portrait) {
   img {
     max-width: 50%;
     height: auto; }
@@ -119,11 +120,50 @@ footer {
 
   .shortly p {
     font-size: 25px;
-    width: 85%;
+    width: 100%;
     -webkit-animation: mobile 4s infinite steps(13); }
 
   footer {
     font-size: 18px; } }
+@media screen and (min-width: 768px) and (orientation: portrait) {
+  .shortly {
+    width: 35%; }
+
+  .shortly p {
+    -webkit-animation: tablette 4s infinite steps(13); } }
+@media screen and (max-width: 960px) and (orientation: landscape) {
+  img {
+    max-width: 70%;
+    height: auto; }
+
+  header h1 {
+    font-size: 45px; }
+
+  .first_menu {
+    text-align: center; }
+
+  .second_menu {
+    text-align: center; }
+
+  .third_menu {
+    text-align: center; }
+
+  .fourth_menu {
+    text-align: center; }
+
+  .shortly {
+    width: 35%; }
+
+  .shortly p {
+    font-size: 25px;
+    width: 100%;
+    -webkit-animation: paysage 4s infinite steps(13); }
+
+  footer {
+    font-size: 18px; } }
+@media screen and (min-width: 962px) and (orientation: landscape) {
+  .shortly p {
+    -webkit-animation: tablette 4s infinite steps(13); } }
 @-webkit-keyframes tremblements1 {
   0% {
     transform: translateX(0px); }
@@ -159,9 +199,24 @@ footer {
     width: 65%; } }
 @-webkit-keyframes mobile {
   from {
-    width: 0%; }
+    width: 0px; }
   to {
-    width: 85%; } }
+    width: 180px; } }
+@-webkit-keyframes tablette {
+  from {
+    width: 0px; }
+  to {
+    width: 250px; } }
+@-webkit-keyframes paysage {
+  from {
+    width: 0px; }
+  to {
+    width: 180px; } }
+@-webkit-keyframes big {
+  from {
+    width: 0px; }
+  to {
+    width: 250px; } }
 @font-face {
   font-family: 'amblebold';
   src: url("../../fonts/Amble-Bold-webfont.eot");
