@@ -5,3 +5,26 @@
 
         & h1 { font-size: 40px; }
 }
+
+@media screen and (max-width: 800px) and (orientation: portrait)
+
+{
+
+.menus {
+    text-align: center;
+
+        & h1 { font-size: 30px; }
+}
+
+.menu_detail {
+    max-width: 80%;
+    height: auto;
+}
+
+
+
+
+
+
+
+}
