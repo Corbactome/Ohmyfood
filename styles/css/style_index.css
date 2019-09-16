@@ -96,11 +96,12 @@ footer {
 
 @media screen and (max-width: 767px) and (orientation: portrait) {
   img {
-    max-width: 50%;
+    max-width: 55%;
     height: auto; }
 
   header h1 {
-    font-size: 35px; }
+    font-size: 30px;
+    margin: 15px; }
 
   .first_line {
     flex-direction: column;
@@ -125,7 +126,9 @@ footer {
     text-align: center; }
 
   .shortly {
-    width: 60%; }
+    width: 65%;
+    padding-top: 8px;
+    padding-bottom: 8px; }
 
   .shortly p {
     font-size: 25px;
@@ -133,13 +136,40 @@ footer {
     -webkit-animation: mobile 4s infinite steps(13); }
 
   footer {
-    font-size: 18px; } }
+    font-size: 20px; } }
 @media screen and (min-width: 768px) and (orientation: portrait) {
+  img {
+    max-width: 70%;
+    height: auto; }
+
+  header h1 {
+    font-size: 40px; }
+
+  .first_menu {
+    text-align: center;
+    margin-left: 55px; }
+
+  .second_menu {
+    text-align: center;
+    margin-right: 55px; }
+
+  .third_menu {
+    text-align: center;
+    margin-left: 55px; }
+
+  .fourth_menu {
+    text-align: center;
+    margin-right: 55px; }
+
   .shortly {
-    width: 35%; }
+    width: 42%; }
 
   .shortly p {
-    -webkit-animation: tablette 4s infinite steps(13); } }
+    font-size: 30px;
+    -webkit-animation: tablette 4s infinite steps(13); }
+
+  footer {
+    font-size: 25px; } }
 @media screen and (max-width: 960px) and (orientation: landscape) {
   img {
     max-width: 70%;
@@ -169,10 +199,40 @@ footer {
     -webkit-animation: paysage 4s infinite steps(13); }
 
   footer {
-    font-size: 18px; } }
+    font-size: 22px; } }
 @media screen and (min-width: 962px) and (orientation: landscape) {
+  img {
+    max-width: 65%;
+    height: auto; }
+
+  header h1 {
+    font-size: 45px; }
+
+  .first_menu {
+    text-align: center;
+    margin-left: 55px; }
+
+  .second_menu {
+    text-align: center;
+    margin-right: 55px; }
+
+  .third_menu {
+    text-align: center;
+    margin-left: 55px; }
+
+  .fourth_menu {
+    text-align: center;
+    margin-right: 55px; }
+
+  .shortly {
+    width: 38%; }
+
   .shortly p {
-    -webkit-animation: tablette 4s infinite steps(13); } }
+    font-size: 35px;
+    -webkit-animation: pad_landscape 4s infinite steps(13); }
+
+  footer {
+    font-size: 30px; } }
 @-webkit-keyframes tremblements1 {
   0% {
     transform: translateX(0px); }
@@ -215,7 +275,7 @@ footer {
   from {
     width: 0px; }
   to {
-    width: 250px; } }
+    width: 215px; } }
 @-webkit-keyframes paysage {
   from {
     width: 0px; }
@@ -226,6 +286,11 @@ footer {
     width: 0px; }
   to {
     width: 250px; } }
+@-webkit-keyframes pad_landscape {
+  from {
+    width: 0px; }
+  to {
+    width: 255px; } }
 @font-face {
   font-family: 'amblebold';
   src: url("../../fonts/Amble-Bold-webfont.eot");

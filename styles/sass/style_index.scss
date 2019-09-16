@@ -125,13 +125,14 @@ footer {
 {
 
 img {
-    max-width: 50%;
+    max-width: 55%;
     height: auto;
     
 }
 
 header h1 {
-    font-size: 35px;
+    font-size: 30px;
+    margin: 15px;
 }
 
 .first_line {
@@ -163,7 +164,9 @@ header h1 {
 }
 
 .shortly {
-    width: 60%;
+    width: 65%;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
 .shortly p {
@@ -173,7 +176,7 @@ header h1 {
 }
 
 footer {
-    font-size: 18px;
+    font-size: 20px;
 }
 
 }
@@ -182,12 +185,46 @@ footer {
 
 {
 
+img {
+    max-width: 70%;
+    height: auto;
+}
+
+header h1 {
+    font-size: 40px;
+}
+
+.first_menu {
+    text-align: center;
+    margin-left: 55px;
+}
+
+.second_menu {
+    text-align: center;
+    margin-right: 55px;
+}
+
+.third_menu {
+    text-align: center;
+    margin-left: 55px;
+}
+
+.fourth_menu {
+    text-align: center;
+    margin-right: 55px;
+}
+
 .shortly {
-    width: 35%;
+    width: 42%;
 }
 
 .shortly p {
+    font-size: 30px;
     -webkit-animation: tablette 4s infinite steps(13);
+}
+
+footer {
+    font-size: 25px;
 }
 
 }
@@ -232,7 +269,7 @@ header h1 {
 }
 
 footer {
-    font-size: 18px;
+    font-size: 22px;
 }
 
 }
@@ -241,8 +278,46 @@ footer {
 
 {
 
+img {
+    max-width: 65%;
+    height: auto;
+}
+
+header h1 {
+    font-size: 45px;
+}
+
+.first_menu {
+    text-align: center;
+    margin-left: 55px;
+}
+
+.second_menu {
+    text-align: center;
+    margin-right: 55px;
+}
+
+.third_menu {
+    text-align: center;
+    margin-left: 55px;
+}
+
+.fourth_menu {
+    text-align: center;
+    margin-right: 55px;
+}
+
+.shortly {
+    width: 38%;
+}
+
 .shortly p {
-    -webkit-animation: tablette 4s infinite steps(13);
+    font-size: 35px;
+    -webkit-animation: pad_landscape 4s infinite steps(13);
+}
+
+footer {
+    font-size: 30px;
 }
 
 
@@ -355,7 +430,7 @@ footer {
     }
     
     to {
-        width: 250px;
+        width: 215px;
     }
 }
 
@@ -378,6 +453,17 @@ footer {
     
     to {
         width: 250px;
+    }
+}
+
+@-webkit-keyframes pad_landscape
+{
+    from {
+        width: 0px;
+    }
+    
+    to {
+        width: 255px;
     }
 }
 
