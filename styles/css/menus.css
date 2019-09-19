@@ -29,5 +29,12 @@
     text-align: center; }
     .menus h1 {
       font-size: 35px; } }
+@media screen and (min-width: 2559px) and (orientation: landscape) {
+  .menus h1 {
+    font-size: 70px; }
+
+  .menu_detail {
+    max-width: 100%;
+    height: auto; } }
 
 /*# sourceMappingURL=menus.css.map */

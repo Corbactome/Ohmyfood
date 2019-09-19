@@ -275,7 +275,7 @@ footer {
 
 }
 
-@media screen and (min-width: 962px) and (orientation: landscape)
+@media screen and (min-width: 962px) and (max-width: 2500px) and (orientation: landscape)
 
 {
 
@@ -320,6 +320,68 @@ header h1 {
 footer {
     font-size: 30px;
 }
+
+}
+
+@media screen and (min-width: 2559px) and (orientation: landscape)
+
+{
+
+img {
+    max-width: 65%;
+    height: auto;
+}
+
+header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+header h1 {
+    font-size: 90px;
+}
+
+.first_menu {
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 120px;
+}
+
+.second_menu {
+    text-align: center;
+    margin-top: 30px;
+    margin-right: 120px;
+}
+
+.third_menu {
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 120px;
+}
+
+.fourth_menu {
+    text-align: center;
+    margin-top: 30px;
+    margin-right: 120px;
+}
+
+.shortly {
+    width: 30%;
+    margin-top: 40px;
+}
+
+.shortly p {
+    font-size: 65px;
+    -webkit-animation: big_laptop 5s infinite steps(13);
+}
+
+footer {
+    font-size: 55px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    margin-top: 40px;
+}
+
 
 
 }
@@ -465,6 +527,17 @@ footer {
     
     to {
         width: 255px;
+    }
+}
+
+@-webkit-keyframes big_laptop
+{
+    from {
+        width: 0px;
+    }
+    
+    to {
+        width: 460px;
     }
 }
 
