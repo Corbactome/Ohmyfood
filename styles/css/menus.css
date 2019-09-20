@@ -5,6 +5,9 @@
   .menus h1 {
     font-size: 40px; }
 
+.menu_detail {
+  margin-bottom: 100px; }
+
 @media screen and (max-width: 800px) and (orientation: portrait) {
   .menus {
     text-align: center; }
