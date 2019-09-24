@@ -44,15 +44,14 @@ header h1 {
     margin-top: 50px;
 }
 
-.first_menu {
-        &:hover { -webkit-animation: tremblements1 0.5s linear infinite;
-                  animation: tremblements1 0.5s linear infinite; }
+.first_menu:hover {
+    -webkit-animation: tremblements1 0.5s linear infinite;
+    animation: tremblements1 0.5s linear infinite;
 }
 
-.second_menu {
-
-        &:hover { -webkit-animation: tremblements2 0.5s linear infinite;
-                  animation: tremblements2 0.5s linear infinite; }
+.second_menu:hover {
+    -webkit-animation: tremblements2 0.5s linear infinite;
+    animation: tremblements2 0.5s linear infinite;
 }
 
 .second_line {
@@ -62,15 +61,14 @@ header h1 {
     margin-bottom: 25px;
 }
 
-.third_menu {
-
-        &:hover { -webkit-animation: tremblements3 0.5s linear infinite;
-                  animation: tremblements3 0.5s linear infinite; }
+.third_menu:hover { 
+    -webkit-animation: tremblements3 0.5s linear infinite;
+    animation: tremblements3 0.5s linear infinite;
 }
 
-.fourth_menu {
-        &:hover { -webkit-animation: tremblements4 0.5s linear infinite;
-                  animation: tremblements4 0.5s linear infinite; }
+.fourth_menu:hover {
+    -webkit-animation: tremblements4 0.5s linear infinite;
+    animation: tremblements4 0.5s linear infinite;
 }
 
 .shortly {
@@ -111,16 +109,20 @@ footer {
 .notice {
     margin-left: 15px;
     color: rgba(253,216,53 ,1);
+}
 
-    & p { margin: 0; }
+.notice p { 
+    margin: 0;
 }
 
 .contact {
     margin-right: 15px;
     height: auto;
     color: rgba(253,216,53 ,1);
+}
 
-    & p { margin: 0; }
+.contact p { 
+    margin: 0;
 }
 
 /*---------------------------------------Version mobile moins de 767px mode portrait----------------------------------------------------*/
@@ -224,6 +226,7 @@ footer {
 
     .shortly p {
         font-size: 30px;
+        width: 100%;
         -webkit-animation: tablette 4s infinite steps(13);
         animation: tablette 4s infinite steps(13);
     }
@@ -264,7 +267,7 @@ footer {
     }
 
     .shortly {
-        width: 35%;
+        width: 45%;
     }
 
     .shortly p {
@@ -319,6 +322,7 @@ footer {
 
     .shortly p {
         font-size: 35px;
+        width: 100%;
         -webkit-animation: pad_landscape 4s infinite steps(13);
         animation: pad_landscape 4s infinite steps(13);
     }
@@ -378,6 +382,7 @@ footer {
 
     .shortly p {
         font-size: 65px;
+        width: 100%;
         -webkit-animation: big_laptop 5s infinite steps(13);
         animation: big_laptop 5s infinite steps(13);
     }

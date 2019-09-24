@@ -93,15 +93,17 @@ footer {
 .notice {
   margin-left: 15px;
   color: #fdd835; }
-  .notice p {
-    margin: 0; }
+
+.notice p {
+  margin: 0; }
 
 .contact {
   margin-right: 15px;
   height: auto;
   color: #fdd835; }
-  .contact p {
-    margin: 0; }
+
+.contact p {
+  margin: 0; }
 
 /*---------------------------------------Version mobile moins de 767px mode portrait----------------------------------------------------*/
 @media screen and (max-width: 767px) and (orientation: portrait) {
@@ -178,6 +180,7 @@ footer {
 
   .shortly p {
     font-size: 30px;
+    width: 100%;
     -webkit-animation: tablette 4s infinite steps(13);
     animation: tablette 4s infinite steps(13); }
 
@@ -205,7 +208,7 @@ footer {
     text-align: center; }
 
   .shortly {
-    width: 35%; }
+    width: 45%; }
 
   .shortly p {
     font-size: 25px;
@@ -245,6 +248,7 @@ footer {
 
   .shortly p {
     font-size: 35px;
+    width: 100%;
     -webkit-animation: pad_landscape 4s infinite steps(13);
     animation: pad_landscape 4s infinite steps(13); }
 
@@ -289,6 +293,7 @@ footer {
 
   .shortly p {
     font-size: 65px;
+    width: 100%;
     -webkit-animation: big_laptop 5s infinite steps(13);
     animation: big_laptop 5s infinite steps(13); }
 
