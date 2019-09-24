@@ -1,3 +1,5 @@
+/*----------------------------------------------------Version classique-----------------------------------------------------------*/
+
 body {
     margin: 0;
     font-family: "Times New Roman", arial, serif;
@@ -43,12 +45,14 @@ header h1 {
 }
 
 .first_menu {
-        &:hover { -webkit-animation: tremblements1 0.5s linear infinite; }
+        &:hover { -webkit-animation: tremblements1 0.5s linear infinite;
+                  animation: tremblements1 0.5s linear infinite; }
 }
 
 .second_menu {
 
-        &:hover { -webkit-animation: tremblements2 0.5s linear infinite; }
+        &:hover { -webkit-animation: tremblements2 0.5s linear infinite;
+                  animation: tremblements2 0.5s linear infinite; }
 }
 
 .second_line {
@@ -60,11 +64,13 @@ header h1 {
 
 .third_menu {
 
-        &:hover { -webkit-animation: tremblements3 0.5s linear infinite; }
+        &:hover { -webkit-animation: tremblements3 0.5s linear infinite;
+                  animation: tremblements3 0.5s linear infinite; }
 }
 
 .fourth_menu {
-        &:hover { -webkit-animation: tremblements4 0.5s linear infinite; }
+        &:hover { -webkit-animation: tremblements4 0.5s linear infinite;
+                  animation: tremblements4 0.5s linear infinite; }
 }
 
 .shortly {
@@ -117,6 +123,8 @@ footer {
     & p { margin: 0; }
 }
 
+/*---------------------------------------Version mobile moins de 767px mode portrait----------------------------------------------------*/
+
 @media screen and (max-width: 767px) and (orientation: portrait)
 
 {
@@ -168,12 +176,15 @@ footer {
         font-size: 25px;
         width: 100%;
         -webkit-animation: mobile 4s infinite steps(13);
+        animation: mobile 4s infinite steps(13);
     }
 
     footer {
         font-size: 20px;
     }
 }
+
+/*---------------------------------------Version tablette plus de 768px mode portrait----------------------------------------------------*/
 
 @media screen and (min-width: 768px) and (orientation: portrait)
 
@@ -214,12 +225,15 @@ footer {
     .shortly p {
         font-size: 30px;
         -webkit-animation: tablette 4s infinite steps(13);
+        animation: tablette 4s infinite steps(13);
     }
 
     footer {
         font-size: 25px;
     }
 }
+
+/*---------------------------------------Version mobile moins de 960px mode paysage----------------------------------------------------*/
 
 @media screen and (max-width: 960px) and (orientation: landscape)
 
@@ -257,12 +271,15 @@ footer {
         font-size: 25px;
         width: 100%;
         -webkit-animation: paysage 4s infinite steps(13);
+        animation: paysage 4s infinite steps(13);
     }
 
     footer {
         font-size: 22px;
     }
 }
+
+/*------------------------------------------Ecran entre 962px et 2500px mode paysage----------------------------------------------------*/
 
 @media screen and (min-width: 962px) and (max-width: 2500px) and (orientation: landscape)
 
@@ -303,12 +320,15 @@ footer {
     .shortly p {
         font-size: 35px;
         -webkit-animation: pad_landscape 4s infinite steps(13);
+        animation: pad_landscape 4s infinite steps(13);
     }
 
     footer {
         font-size: 30px;
     }
 }
+
+/*----------------------------------------------Ecran plus de 2559px mode paysage-------------------------------------------------------*/
 
 @media screen and (min-width: 2559px) and (orientation: landscape)
 
@@ -359,6 +379,7 @@ footer {
     .shortly p {
         font-size: 65px;
         -webkit-animation: big_laptop 5s infinite steps(13);
+        animation: big_laptop 5s infinite steps(13);
     }
 
     footer {
@@ -369,25 +390,24 @@ footer {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*----------------------------------------------------Animations pour tous les navigateurs-----------------------------------------------*/
 
 @-webkit-keyframes tremblements1 
+{
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(8px);
+    }
+
+    100% {
+        transform: translateX(-8px);
+    }
+}
+
+@keyframes tremblements1 
 {
     0% {
         transform: translateX(0px);
@@ -417,7 +437,37 @@ footer {
     }
 }
 
+@keyframes tremblements2 
+{
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(3deg);
+    }
+
+    100% {
+        transform: rotate(-3deg);
+    }
+}
+
 @-webkit-keyframes tremblements3
+{
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes tremblements3
 {
     0% {
         transform: scale(1);
@@ -447,7 +497,33 @@ footer {
     }
 }
 
+@keyframes tremblements4
+{
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(8px);
+    }
+
+    100% {
+        transform: translateY(-8px);
+    }
+}
+
 @-webkit-keyframes ecriture 
+{
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 65%;
+    }
+}
+
+@keyframes ecriture 
 {
     from {
         width: 0%;
@@ -469,7 +545,29 @@ footer {
     }
 }
 
+@keyframes mobile
+{
+    from {
+        width: 0px;
+    }
+    
+    to {
+        width: 180px;
+    }
+}
+
 @-webkit-keyframes tablette
+{
+    from {
+        width: 0px;
+    }
+    
+    to {
+        width: 215px;
+    }
+}
+
+@keyframes tablette
 {
     from {
         width: 0px;
@@ -491,7 +589,29 @@ footer {
     }
 }
 
+@keyframes paysage
+{
+    from {
+        width: 0px;
+    }
+    
+    to {
+        width: 180px;
+    }
+}
+
 @-webkit-keyframes big
+{
+    from {
+        width: 0px;
+    }
+    
+    to {
+        width: 250px;
+    }
+}
+
+@keyframes big
 {
     from {
         width: 0px;
@@ -513,6 +633,17 @@ footer {
     }
 }
 
+@keyframes pad_landscape
+{
+    from {
+        width: 0px;
+    }
+    
+    to {
+        width: 255px;
+    }
+}
+
 @-webkit-keyframes big_laptop
 {
     from {
@@ -524,13 +655,18 @@ footer {
     }
 }
 
+@keyframes big_laptop
+{
+    from {
+        width: 0px;
+    }
+    
+    to {
+        width: 460px;
+    }
+}
 
-
-
-
-
-
-
+/*-------------------------------------------------------Police spécifique--------------------------------------------------------------*/
 
 @font-face {
     font-family: 'amblebold';

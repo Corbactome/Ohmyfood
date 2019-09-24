@@ -1,39 +1,45 @@
+/*----------------------------------------------------Version classique-----------------------------------------------------------*/
 .menus {
   display: flex;
   flex-direction: column;
   align-items: center; }
-  .menus h1 {
+  .menus h2 {
     font-size: 40px; }
 
 .menu_detail {
   margin-bottom: 100px; }
 
+/*---------------------------------------Version mobile moins de 800px mode portrait----------------------------------------------------*/
 @media screen and (max-width: 800px) and (orientation: portrait) {
   .menus {
     text-align: center; }
-    .menus h1 {
+    .menus h2 {
       font-size: 25px; }
 
   .menu_detail {
     max-width: 80%;
     height: auto; } }
+/*----------------------------------------------Ecran plus de 801px mode portrait------------------------------------------------------*/
 @media screen and (min-width: 801px) and (orientation: portrait) {
   .menus {
     text-align: center; }
-    .menus h1 {
+    .menus h2 {
       font-size: 35px; } }
+/*---------------------------------------------Ecran moins de 960px mode paysage-------------------------------------------------------*/
 @media screen and (max-width: 960px) and (orientation: landscape) {
   .menus {
     text-align: center; }
-    .menus h1 {
+    .menus h2 {
       font-size: 30px; } }
+/*-------------------------------------------------Ecran plus de 961px mode paysage----------------------------------------------------*/
 @media screen and (min-width: 961px) and (orientation: landscape) {
   .menus {
     text-align: center; }
-    .menus h1 {
+    .menus h2 {
       font-size: 35px; } }
+/*-------------------------------------------------Ecran plus de 2559px mode paysage----------------------------------------------------*/
 @media screen and (min-width: 2559px) and (orientation: landscape) {
-  .menus h1 {
+  .menus h2 {
     font-size: 70px; }
 
   .menu_detail {
