@@ -359,6 +359,7 @@ footer {
     transform: translateY(8px); }
   100% {
     transform: translateY(-8px); } }
+/*----------------------------------------Animation "Prochainement" pour tous les navigateurs--------------------------------------------*/
 @-webkit-keyframes ecriture {
   from {
     width: 0%; }
